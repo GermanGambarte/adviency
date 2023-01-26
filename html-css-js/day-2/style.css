@@ -42,7 +42,15 @@ body {
 
 .form-input {
   padding: 0.3rem 0.6rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 -0.1rem #fab87d, 0 0 0 -0.2rem #c2331d;
+  transition: box-shadow 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.form-input__error {
+  box-shadow: 0 0 0 0.2rem #fab87d, 0 0 0 0.4rem #c2331d;
+}
+
 .form-btn {
   width: 3rem;
   background-color: #c2331d;
@@ -52,4 +60,16 @@ body {
 }
 .list {
   padding-inline-start: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
