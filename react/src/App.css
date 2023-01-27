@@ -11,7 +11,7 @@ svg {
 }
 
 .gifts-container {
-  background-color: #b53b10;
+  background-color: #704606;
   padding: 2rem;
   border-radius: 1rem;
   border: 5px dashed #eee;
@@ -25,12 +25,13 @@ svg {
 }
 
 .form-input,
-.form-btn__submit {
+.form-btn__submit,
+.list-btn {
   padding: 0.25rem 0.5rem;
   border: none;
   outline: none;
   border-radius: 0.5rem;
-  box-shadow: 0 0 0 -0.1rem #b53b10, 0 0 0 -0.2rem #eee;
+  box-shadow: 0 0 0 -0.1rem #704606, 0 0 0 -0.2rem #eee;
   transition: box-shadow 100ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
@@ -40,11 +41,34 @@ svg {
 }
 
 .form-input:focus {
-  box-shadow: 0 0 0 0.2rem #b53b10, 0 0 0 0.4rem #eee;
+  box-shadow: 0 0 0 0.2rem #704606, 0 0 0 0.4rem #eee;
 }
 
 .form-btn__submit:focus {
-  box-shadow: 0 0 0 0.2rem #b53b10, 0 0 0 0.4rem #0b8a64;
+  box-shadow: 0 0 0 0.2rem #704606, 0 0 0 0.4rem #0b8a64;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.list-btn {
+  background-color: #b53b10;
+  color: white;
+}
+
+.list-btn:focus {
+  box-shadow: 0 0 0 0.2rem #704606, 0 0 0 0.4rem #b53b10;
 }
 
 .sr-only {
