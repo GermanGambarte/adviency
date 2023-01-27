@@ -1,13 +1,60 @@
+svg {
+  width: 1.5rem;
+}
+
 .gifts {
   display: grid;
   place-content: center;
   height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg");
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg');
   color: #eee;
 }
+
 .gifts-container {
   background-color: #b53b10;
   padding: 2rem;
   border-radius: 1rem;
   border: 5px dashed #eee;
+  display: grid;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-input,
+.form-btn__submit {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 -0.1rem #b53b10, 0 0 0 -0.2rem #eee;
+  transition: box-shadow 100ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.form-btn__submit {
+  background-color: #0b8a64;
+  color: white;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 0.2rem #b53b10, 0 0 0 0.4rem #eee;
+}
+
+.form-btn__submit:focus {
+  box-shadow: 0 0 0 0.2rem #b53b10, 0 0 0 0.4rem #0b8a64;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
